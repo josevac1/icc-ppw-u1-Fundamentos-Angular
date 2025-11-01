@@ -8,7 +8,7 @@ import { PerfilPage } from './features/perfilPage/perfilPage';
 
 export const routes: Routes = [
         {
-            path: '',
+            path: 'home',
             component: HomePage
 
         },
