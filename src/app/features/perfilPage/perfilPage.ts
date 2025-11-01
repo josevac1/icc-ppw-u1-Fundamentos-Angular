@@ -11,9 +11,10 @@ export class PerfilPage {
   lastName = signal('Pérez');
   age = signal(30);
 
-  getFullName() {
-    return '${this.name()} ${this.lastName()} con edad ${this.age()} años';
-  }
+ getFullName() {
+  return `${this.name()} ${this.lastName()} con edad ${this.age()} años`;
+}
+
 
 
   changeData() {
