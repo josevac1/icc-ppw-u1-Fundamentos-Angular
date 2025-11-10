@@ -1,1 +1,3 @@
-<p>Proyecto-dospage works!</p>,
+<app-listado-proyectos listName="Lista deseado"  [proyectos]="ProyectosServices.proyectos()" ></app-listado-proyectos>
+<p>Aqui deberia esatr un componentes qeu agrega a un servicio</p>
+<app-add-proyecto (newProyecto)="ProyectosServices.addProyecto($event)" ></app-add-proyecto>

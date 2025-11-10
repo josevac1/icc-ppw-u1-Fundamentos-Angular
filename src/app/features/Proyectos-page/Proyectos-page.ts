@@ -1,8 +1,9 @@
 import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
+import { ListadoProyectos } from './components/listado-proyectos/listado-proyectos';
 
 @Component({
   selector: 'app-proyectos-page',
-  imports: [],
+  imports: [ListadoProyectos],
   templateUrl: './Proyectos-page.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })

@@ -1,0 +1,12 @@
+<h1>Proyecto</h1>
+
+<section>
+    <div>
+        <h3>Agregar proyecto</h3>
+        <h4>Proyecto Agregar{{name()}}</h4>
+        <input type="text" placeholder="Nombre del proyecto" [value] = "name()" (change)="changeName(txtname.value)" #txtname>
+        <input type="text" placeholder="descripcion del proyecto" [value]= "descripcion()" (change)="changeDescripcion(txtdescripcion.value)" #txtdescripcion>
+        <button (click)="addProyecto()">Agregar Proyecto</button>
+
+    </div>
+</section>
