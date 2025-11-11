@@ -17,6 +17,7 @@ export class AddProyecto {
   }]);
 
   newProyecto =output <Proyecto>();
+  removeProyecto=output<number>();
   
    changeName (value: string ){
     this.name.set(value)
@@ -25,6 +26,10 @@ export class AddProyecto {
   changeDescripcion(value: string){
     this.descripcion.set(value);
 
+  }
+
+  dellProyecto(id: number){
+    this.removeProyecto.emit(id);
   }
   addProyecto(){
     const newProyecto: Proyecto ={

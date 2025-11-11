@@ -40,4 +40,7 @@ export class ProyectosPage {
       descripcion: 'Descripcion del Proyecto B'
     }
   ])
+ 
+ 
+  
 }
