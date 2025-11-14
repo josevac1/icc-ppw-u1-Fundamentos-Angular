@@ -3,6 +3,7 @@ import { HomePage } from './features/homePage/homePage';
 import { PerfilPage } from './features/perfilPage/perfilPage';
 import { ProyectoDospage } from './features/Proyecto-dospage/Proyecto-dospage';
 import { ProyectosPage } from './features/Proyectos-page/Proyectos-page';
+import { Formulario } from './features/formulario/formulario';
 
 export const routes: Routes = [
         {
@@ -23,6 +24,10 @@ export const routes: Routes = [
         {
             path: 'dospage',
             component: ProyectoDospage
+        },
+        {
+            path: 'formulario',
+            component: Formulario
         }
         
         
