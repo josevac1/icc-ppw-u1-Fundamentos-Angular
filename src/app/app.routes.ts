@@ -3,7 +3,8 @@ import { HomePage } from './features/homePage/homePage';
 import { PerfilPage } from './features/perfilPage/perfilPage';
 import { ProyectoDospage } from './features/Proyecto-dospage/Proyecto-dospage';
 import { ProyectosPage } from './features/Proyectos-page/Proyectos-page';
-import { Formulario } from './features/formulario/formulario';
+import { formulariosRouters } from './features/Formularios/formularios-router';
+import { Formulario } from './features/Formularios/page/formulario/formulario';
 
 export const routes: Routes = [
         {
@@ -25,11 +26,21 @@ export const routes: Routes = [
             path: 'dospage',
             component: ProyectoDospage
         },
+        
+
+        //{
+          //  path: 'formulario',
+           // component:Formulario
+        //},
+
         {
+        
             path: 'formulario',
-            component: Formulario
+            loadChildren: () => 
+            import('./features/Formularios/formularios-router').then(m => m.formulariosRouters),
+        },
+        {
+            path:'**',
+            redirectTo:""
         }
-        
-        
-        
 ];
