@@ -3,8 +3,6 @@ import { HomePage } from './features/homePage/homePage';
 import { PerfilPage } from './features/perfilPage/perfilPage';
 import { ProyectoDospage } from './features/Proyecto-dospage/Proyecto-dospage';
 import { ProyectosPage } from './features/Proyectos-page/Proyectos-page';
-import { formulariosRouters } from './features/Formularios/formularios-router';
-import { Formulario } from './features/Formularios/page/formulario/formulario';
 
 export const routes: Routes = [
         {
