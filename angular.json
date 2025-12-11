@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular/build:application",
           "options": {
-            
+
             "browser": "src/main.ts",
             "tsConfig": "tsconfig.app.json",
             "assets": [
@@ -29,6 +29,8 @@
           },
           "configurations": {
             "production": {
+              "baseHref": "/icc-ppw-u1-Fundamentos-Angular/",
+                "deployUrl": "/icc-ppw-u1-Fundamentos-Angular/",
               "budgets": [
                 {
                   "type": "initial",
